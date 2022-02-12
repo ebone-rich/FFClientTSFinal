@@ -60,5 +60,4 @@ export function signupValidation ({firstName, lastName, email, password, confirm
     confirmPassErr = 'Passwords do not match'
   }
 
-  // return [firstNameErr, lastNameErr, emailErr, passErr, confirmPassErr]
 }

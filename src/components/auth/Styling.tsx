@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-//-------------------------------------------//
 
-
-//            ** LOGIN STYLE **             //
-
-
-//------------------------------------------//
-// * Main div * //
+//  Main div 
 export const LoginContainer = styled.div`
   padding: 48px 0;
   display: flex;
@@ -19,7 +13,7 @@ export const LoginContainer = styled.div`
   transition: all 0.3s ease-in-out;
 `
 
-// * Wrapper * //
+//  Wrapper 
 export const LoginWrapper = styled.div`
   width: 25%;
   display: grid;
@@ -96,7 +90,7 @@ export const LoginSubmit = styled.button`
   }
 `
 
-// * New to Meal Prep Market? * // 
+// new user
 export const LoginP = styled.p`
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -106,7 +100,7 @@ export const LoginP = styled.p`
   }
 `
 
-// * Sign up Here * //
+// Sign up  
 export const LoginRoute = styled(Link)`
   text-align: center;
   margin-top: -2.6vh;
@@ -120,13 +114,7 @@ export const LoginRoute = styled(Link)`
   }
 `
 
-//-------------------------------------------//
 
-
-//           ** SIGN UP STYLE **            //
-
-
-//------------------------------------------//
 // * Main Div * //
 export const SignupContainer = styled.div`
   padding: 21vh 0;
@@ -147,7 +135,7 @@ export const SignupContainer = styled.div`
   }
 `
 
-// * Wrapper * //
+//  Wrapper 
 export const SignupWrapper = styled.div`
   width: 35vw;
   display: grid;
@@ -175,7 +163,7 @@ export const SignupWrapper = styled.div`
   }
 `
 
-// * Signup Header * //
+// Signup Header 
 export const SignupH1 = styled.h1`
   font-weight: 400;
   font-size: 1.7rem;
@@ -184,7 +172,7 @@ export const SignupH1 = styled.h1`
   color: #05386b;
 `
 
-// * Form */
+// 
 export const SignupForm = styled.form`
   display: grid;
   grid-gap: 2.5vh;
@@ -192,20 +180,20 @@ export const SignupForm = styled.form`
   justify-content: center;
 `
 
-// * Input * //
+//
 export const SignupInput = styled.input`
   border-radius: 4px;
   border: thin solid #05386b;
 `
 
-// * Labels * //
+// Labels 
 export const SignupLabel = styled.label`
   margin-bottom: -2.5vh;
   font-size: 0.85rem;
   color: #05386b;
 `
 
-// * Submit Button * //
+// Submit Button
 export const SignupSubmit = styled.button`
   font-family: 'Open Sans', sans-serif;
   width: fit-content;
@@ -226,7 +214,7 @@ export const SignupSubmit = styled.button`
   }
 `
 
-// * Already have an account? * // 
+// Already have an account? 
 export const SignupP = styled.p`
   font-size: 0.85rem;
   margin-top: 1vh;
@@ -234,7 +222,7 @@ export const SignupP = styled.p`
   transition: all 0.3s ease-in-out;
 `
 
-// * Login Here * //
+// Login Here 
 export const SignupRoute = styled(Link)`
   font-size: 0.85rem;
   text-align: center;
@@ -246,7 +234,7 @@ export const SignupRoute = styled(Link)`
   }
 `
 
-// * Role Switch * //
+// Role Switch
 export const RoleDiv = styled.div`
   font-size: 0.8rem;
   display: flex;

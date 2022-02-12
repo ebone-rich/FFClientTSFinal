@@ -4,7 +4,6 @@ import { AppProps } from '../../App';
 import APIURL from '../helpers/environments';
 import {LoginContainer, LoginForm, LoginH1, LoginInput, LoginLabel, LoginP, LoginRoute, LoginSubmit, LoginWrapper} from './AuthElements';
 
-//TODO: Need to set up form validation
 
 export type LoginProps = {
   sessionToken: AppProps['sessionToken'],
@@ -44,7 +43,7 @@ class Login extends React.Component<LoginProps, LoginState> {
     })
   }
 
-  // ** FETCH ** //
+
   loginUser = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -96,7 +95,7 @@ class Login extends React.Component<LoginProps, LoginState> {
               <LoginInput type='password' name='password' value={this.state.password} onChange={this.handleChange} />
               <LoginSubmit type='submit'>Login</LoginSubmit>
             </LoginForm>
-            <LoginP>New to Meal Prep Market?</LoginP>
+            <LoginP>--add tagline for sign up--</LoginP>
             <LoginRoute to='/register'>Sign up here!</LoginRoute>
           </LoginWrapper>
           {this.state.user !== '' && <Navigate to={this.props.prevPath} replace={true}/>}

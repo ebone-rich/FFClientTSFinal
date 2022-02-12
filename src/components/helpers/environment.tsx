@@ -1,5 +1,5 @@
 let APIURL:string;
 
-APIURL = 'https://mealprepmarket-server.herokuapp.com'
+APIURL = ''
 
 export default APIURL;

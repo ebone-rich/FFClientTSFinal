@@ -256,7 +256,7 @@ const App: React.FunctionComponent = () => {
         </Routes>
         <div id='footerDiv'>
           <footer id='footer'>
-            <p>© <a href='https://gabrielleford.github.io/'>Ebone Rich</a> 2022</p>
+            <p>© <a href='https://github.com/ebone-rich'>Ebone Rich</a> 2022</p>
           </footer>
         </div>
       </Router>
