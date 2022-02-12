@@ -1,6 +1,6 @@
 import React from "react";
 import { LandingState } from "./Landing";
-import { ListingCard, ListingH1, ListingImg, ListingPrice, ListingTagContainer, ListingTag, RouteLink } from "../ReusableElements";
+//import { ListingCard, ListingH1, ListingImg, ListingPrice, ListingTagContainer, ListingTag, RouteLink } from "../ReusableElements";
 
 type MapState = {
   divClicked: boolean,
@@ -20,27 +20,27 @@ class LandingMap extends React.Component<MapProps, MapState> {
       _isMounted: false,
     }
 
-    this.mapListings = this.mapListings.bind(this);
-  }
+//     this.mapListings = this.mapListings.bind(this);
+//   }
 
-  mapListings = () => {
-    return (
-      this.state._isMounted && this.props.results.map((listing): JSX.Element => {
-        return (
-          <RouteLink href={`/listing/${listing.id}`} key={listing.id}>
-            <ListingCard onClick={() => this.setState({divClicked: true})}>
-              <ListingH1>{listing.title}</ListingH1>
-              <ListingImg src={listing.image} />
-              <ListingPrice>${listing.price} USD</ListingPrice>
-              <ListingTagContainer>
-              {/* <ListingTag src=""/> */}
-              </ListingTagContainer>
-            </ListingCard>
-          </RouteLink>
-        )
-      })
-    )
-  }
+//   mapListings = () => {
+//     return (
+//       this.state._isMounted && this.props.results.map((listing): JSX.Element => {
+//         return (
+//           <RouteLink href={`/listing/${listing.id}`} key={listing.id}>
+//             <ListingCard onClick={() => this.setState({divClicked: true})}>
+//               <ListingH1>{listing.title}</ListingH1>
+//               <ListingImg src={listing.image} />
+//               <ListingPrice>${listing.price} USD</ListingPrice>
+//               <ListingTagContainer>
+//               {/* <ListingTag src=""/> */}
+//               </ListingTagContainer>
+//             </ListingCard>
+//           </RouteLink>
+//         )
+//       })
+//     )
+//   }
 
   componentDidMount() {
     this.setState({
